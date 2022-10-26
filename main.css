@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+
+:root {
+	--primary: #34d399;
+	--dark: #111827;
+	--dark-grey: #1F2937;
+	--lighter-grey: #374151;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background-color: var(--dark-grey);
+	font-size: 16px;
+	color: #FFF;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--dark);
+	border-bottom: 4px solid var(--primary);
+}
+
+header h1 {
+	color: var(--offwhite);
+	font-size: 3rem;
+}
+
+/* Pagination */
+.pagination-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 4px;
+}
+
+.pagination-container .list {
+	width: 100%;
+	max-width: 768px;
+	background-color: var(--lighter-grey);
+	margin-top: 25px;
+	display: flex;
+	flex-direction: column;
+}
+
+.pagination-container .list .post {
+	padding: 15px;
+	border-bottom: 2px solid #FFF;
+}
+
+.pagination-container .pagination {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.pagination-container .pagination button {
+	width: 50px;
+	height: 50px;
+
+	appearance: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	background-color: var(--primary);
+
+	margin: 5px;
+	transition: 0.4s;
+
+	color: #FFF;
+	font-size: 18px;
+	text-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+}
+
+.pagination-container .pagination button.active {
+	background-color: #FFF;
+	color: var(--dark)
+}
